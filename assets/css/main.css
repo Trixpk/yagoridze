@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: bold;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Adigiana2;
+    font-style: normal;
+    src: url('../fonts/adigiana2.ttf');
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 1720px;
+    width: calc(100% - 120px);
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header__top {
+    background: linear-gradient( #2E2E2E, #232323 );
+    color: #fff;
+    height: 220px;
+}
+
+.header__top-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__contacts-phone {
+    font-family: Adigiana2, Arial, sans-serif;
+    font-size: 30px;
+}
+
+.header__contacts-phone a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.header__contacts-phone a:hover {
+    color: #F16E20;
+}
+
+.header__contacts-schedule {
+    font-size: 14px;
+}
+
+.header__contacts-schedule span {
+    font-weight: bold;
+}
+
+.header__address {
+    display: flex;
+}
+
+.header__address-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__address-city {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header__address-street {
+    font-size: 14px;
+    color: #AF9A8C;
+}
+
+.header__address::before {
+    content: "";
+    background-image: url('../img/map.svg');
+    width: 30px;
+    height: 36px;
+    display: block;
+    margin-right: 15px;
+}
+
+.header__menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: #AF9A8C;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #232323;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.header__menu-link:hover {
+    background-color: #F16E20;
+    color: #000;
+}
+
+.header__menu-link.active {
+    background-color: #F16E20;
+    color: #000;
+}
+
+.header__basket {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__basket-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.header__basket-circle::before {
+    content: "";
+    display: block;
+    width: 41px;
+    height: 53px;
+    background-image: url('../img/cart.svg');
+}
+
+.header__basket-info {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+    padding: 14px 20px 14px 30px;
+    position: relative;
+    right: 15px;
+}
+
+.header__submenu {
+    background-image: url('../img/fon.png');
+    height: 142px;
+    top: 148px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__submenu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+}
+
+.header__submenu-item {
+    max-width: 115px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.header__submenu-link::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 7px auto;
+}
+
+.header__submenu-item:nth-child(1) .header__submenu-link:before {
+    background-image: url('../img/mangal1.svg');
+}
+
+.header__submenu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-top: 7px;
+    line-height: 14px;
+}
+/* HEADER END */
+
+/* MAIN */
+
+    /* MAIN STOCK */
+
+.stock {
+    background: linear-gradient( #2E2E2E, #232323);
+}
+
+.stock__title {
+    padding-top: 190px;
+}
+
+    /* END MAIN STOCK */
+
+/* END MAIN */
