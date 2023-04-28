@@ -13,7 +13,7 @@
         <div class="header__top">
             <div class="content header__top-wrap">
                 <a href="/" class="header__logo">
-                    <img src="./assets/img/logo.svg" alt="Доставка Ягоридзе">
+                    <img class="header__logo-img" src="./assets/img/logo.svg" alt="Доставка Ягоридзе">
                 </a>
                 <div class="header__contacts">
                     <span class="header__contacts-phone">
@@ -50,33 +50,190 @@
                     <div class="header__basket-circle"></div>
                     <div class="header__basket-info">3 блюда, 1900р</div>
                 </div>
+                <button type="button" class="mobile-menu-button" aria-expanded="true">
+                    <svg class="mobile-menu-button-icon" aria-hidden="true">
+                        <use class="mobile-menu-button-icon-open" href="./assets/img/sprites/mobile-menu.svg#mobile-menu-closed" />
+                        <use class="mobile-menu-button-icon-close" href="./assets/img/sprites/mobile-menu.svg#mobile-menu-opened" />
+                    </svg>
+                </button>
             </div>
         </div>
         <nav class="content header__submenu">
             <ul class="header__submenu-list">
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Мясо на мангале</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Мясо в тандыре</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Хинкали</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Закуски</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Овощи на мангале</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Пицца из печи</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Свежая выпечка</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Шаурма</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Десерты</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Напитки</a></li>
-                <li class="header__submenu-item"><a href="#" class="header__submenu-link">Мясо маринованное</a></li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 63 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#mangal-meat" />
+                        </svg>
+                        <span class="header__submenu-link-title">Мясо на мангале</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 63 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#tandoor" />
+                        </svg>
+                        <span class="header__submenu-link-title">Мясо в тандыре</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">    
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 70 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#hinkaly" />
+                        </svg>
+                        <span class="header__submenu-link-title">Хинкали</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">    
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 76 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#zakuski" />
+                        </svg>
+                        <span class="header__submenu-link-title">Закуски</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 86 77" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#vegitables" />
+                        </svg>
+                        <span class="header__submenu-link-title">Овощи на мангале</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 46 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#pizza" />
+                        </svg>
+                        <span class="header__submenu-link-title">Пицца из печи</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 63 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#vipechka" />
+                        </svg>
+                        <span class="header__submenu-link-title">Свежая выпечка</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 85 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#shaurma" />
+                        </svg>
+                        <span class="header__submenu-link-title">Шаурма</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 64 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#deserts" />
+                        </svg>
+                        <span class="header__submenu-link-title">Десерты</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 64 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#drinks" />
+                        </svg>
+                        <span class="header__submenu-link-title">Напитки</span>
+                    </a>
+                </li>
+                <li class="header__submenu-item">
+                    <a href="#" class="header__submenu-link">
+                        <svg viewBox="0 0 64 64" class="header__submenu-img">
+                            <use href="./assets/img/sprites/menu.svg#meat-marinated" />
+                        </svg>
+                        <span class="header__submenu-link-title">Мясо маринованное</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="stock">
-            <div class="stock__info">
-                <h1 class="stock__title">Ресторан доставки <span>Ягоридзе</span></h1>
-                <p class="stock__description">Готовим по фирменным рецептам шеф-повара из Грузии - Ягора Мирабяна</p>
+            <div class="stock__wrapper content">
+                <div class="stock__info">
+                    <h1 class="stock__title">Ресторан доставки <span>Ягоридзе</span></h1>
+                    <p class="stock__description">
+                        <svg class="stock__moustache" viewBox="0 0 34 10" role="img" aria-label="Усы">
+                            <use href="./assets/img/sprites/sprite.svg#moustache"></use>
+                        </svg>
+                        <span>Готовим по фирменным рецептам шеф-повара из Грузии - Ягора Мирабяна</span>
+                    </p>
+                </div>
+                <div class="stock__slider">
+                    <ul class="stock__slider-list">
+                        <li class="stock__slider-item">
+                            <img class="stock__slider-img" src="./assets/img/slide1.jpeg" alt="slide1">
+                        </li>
+                        <li class="stock__slider-item">
+                            <img class="stock__slider-img" src="./assets/img/slider2.jpeg" alt="slide2">
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="stock__slider">
-                
+        </section>
+
+        <section class="special-offer">
+            <div class="special-offer__wrapper content">
+                <h2 class="special-offer__title">Блюда недели</h2>
+                <div class="special-offer__items">
+                    <div class="special-offer__item">
+                        <img class="special-offer__item-img" src="./assets/img/product.png" alt="product">
+                        <h3 class="special-offer__item-title">Плов из баранины</h3>
+                        <span class="speacial-offer__gramm">300 гр</span>
+                        <p class="special-offer__description">Колбаса пепперони, томат, оливки, сыр моцарелла, соус помодоро</p>
+                        <div class="special-offer__item-bottom">
+                            <div class="special-offer__price">
+                                <div class="special-offer__cost">325 р</div>
+                                <div class="special-offer__old-price">460 р</div>
+                            </div>
+                            <button class="order-button">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="special-offer__item">
+                        <img class="special-offer__item-img" src="./assets/img/product.png" alt="product">
+                        <h3 class="special-offer__item-title">Плов из баранины</h3>
+                        <span class="speacial-offer__gramm">300 гр</span>
+                        <p class="special-offer__description">Колбаса пепперони, томат, оливки, сыр моцарелла, соус помодоро</p>
+                        <div class="special-offer__item-bottom">
+                            <div class="special-offer__price">
+                                <div class="special-offer__cost">325 р</div>
+                                <div class="special-offer__old-price">460 р</div>
+                            </div>
+                            <button class="order-button">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="special-offer__item">
+                        <img class="special-offer__item-img" src="./assets/img/product.png" alt="product">
+                        <h3 class="special-offer__item-title">Плов из баранины</h3>
+                        <span class="speacial-offer__gramm">300 гр</span>
+                        <p class="special-offer__description">Колбаса пепперони, томат, оливки, сыр моцарелла, соус помодоро</p>
+                        <div class="special-offer__item-bottom">
+                            <div class="special-offer__price">
+                                <div class="special-offer__cost">325 р</div>
+                                <div class="special-offer__old-price">460 р</div>
+                            </div>
+                            <button class="order-button">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="special-offer__item">
+                        <img class="special-offer__item-img" src="./assets/img/product.png" alt="product">
+                        <h3 class="special-offer__item-title">Плов из баранины</h3>
+                        <span class="speacial-offer__gramm">300 гр</span>
+                        <p class="special-offer__description">Колбаса пепперони, томат, оливки, сыр моцарелла, соус помодоро</p>
+                        <div class="special-offer__item-bottom">
+                            <div class="special-offer__price">
+                                <div class="special-offer__cost">325 р</div>
+                                <div class="special-offer__old-price">460 р</div>
+                            </div>
+                            <button class="order-button">Заказать</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
